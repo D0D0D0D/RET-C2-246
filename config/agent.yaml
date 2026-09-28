@@ -1,0 +1,23 @@
+# Agent manifest — static discovery and compile-time requirements
+id: "RET-C2-246"
+name: "Retail In-Store Customer Safety & Physical Anomaly Alert (Multilingual)"
+namespace: "ret"
+version: "1.0.0"
+enabled: true
+category: "Cat 2"
+generation_mode: "llm"
+industry: "RET"
+
+# Opaque compatibility metadata; this is not an inheritance selector.
+base_type: "ChatAgent"
+
+# Entry point as a single dotted import path.
+class: "src.graph.graph.RETInStoreSafetyAlertAgent"
+
+# Security
+required_trust_level: "VERIFIED_EXTERNAL"
+
+# Compile-time requirements used directly by the implementation.
+requires:
+  secrets: []
+  extras: []

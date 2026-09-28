@@ -1,0 +1,8 @@
+# Runtime parameters loaded separately from the static agent manifest.
+max_retry: 3
+timeout_seconds: 30
+
+# Default output language for generated safety content. Callers may override
+# this per request through the payload's "locale" field (for example: ja, en,
+# vi, or fil).
+locale: "ja"
